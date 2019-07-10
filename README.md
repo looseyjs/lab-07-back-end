@@ -1,7 +1,7 @@
-# lab-06-back-end
-# Project Name
+# lab-07-back-end
+# City Explorer Day 2
 
-**Author**: [Manish](https://github.com/jManij) and [BomiBear](https://github.com/bomibear)
+**Author**: []() and [BomiBear](https://github.com/bomibear)
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
@@ -24,4 +24,5 @@ This application currently runs with provided JSON data that is stored in the da
 07-09-2019 1:59pm - Application now has a fully-functional express server, with a GET route for the location resource. The information for Lynnwood WA will be displayed along with the 8 day weather forecast.
 
 ## Credits and Collaborations
+[]() and [BomiBear](https://github.com/bomibear) worked on the second day of this project.
 [Manish](https://github.com/jManij) and [BomiBear](https://github.com/bomibear) worked on the first day of this project.
