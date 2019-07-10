@@ -56,21 +56,19 @@ app.use('*', (request, response) => {
 
 function weatherForecast() {
   //Constructor for weather data
-  const weather = [];
+
   const darkSkyData = require('./data/darksky.json');
-  darkSkyData.daily.data.forEach(item => {
-    let obj = {
-      forecast: item.summary,
-      time: new Date(item.time * 1000).toDateString()
-    }
-    weather.push(obj);
-  })
-  return weather;
+  let weatherData = darkSkyData.daily.data.map(el => ({
+    forecast: el.summary,
+    time: new Date(el.time * 1000).toDateString()
+
+  }))
+  return weatherData;
 }
 
 //refactror the callback function with the error hundling using catch error
 function searchToLatLng(locationName) {
-  try { 
+  try {
     const geoData = require('./data/geo.json');
     const location = {
       search_query: locationName,
